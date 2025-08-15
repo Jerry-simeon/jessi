@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Love, Jessi 💖</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="hearts"></div> <!-- Heart animations here -->
+
+    <div class="container">
+        <h1>To My Dearest Jessi 💕</h1>
+        <p class="letter">
+            Every day with you is a blessing I never take for granted. <br><br>
+            Your smile lights up my world, and your love fills my heart with endless joy. <br><br>
+            I made this little space on the web just for you — to remind you how deeply and truly I love you. <br><br>
+            Here's to us, and to every moment we share, now and forever. ❤️
+        </p>
+        <p class="sign">Forever yours,<br>Sheridan Simeon</p>
+
+        <!-- New Button for Interaction -->
+        <button class="magic-btn" onclick="showSecretMessage()">Click me, my love! 💘</button>
+        
+        <!-- Hidden Message -->
+        <div id="secretMessage" class="secret-message">
+            I love you Sooo Muchhhhhh Mommyyy.... 💖
+        </div>
+    </div>
+
+    <footer>
+        Made with love 💘 by Sheridan for Jessi
+    </footer>
+
+    <script>
+        function showSecretMessage() {
+            document.getElementById("secretMessage").classList.toggle("show");
+            // Trigger heart burst animation
+            document.querySelector(".hearts").classList.toggle("burst");
+        }
+    </script>
+</body>
+</html>
